@@ -1,9 +1,9 @@
 # Kiosek-React-Native
-Maturitní práce frajera mega sexouše Šimona Šnyty
+Maturitní práce frajera mega skibidi sigmy sexouše Šimona Šnyty
 
 **Instalace React Native**
 
-npm i 
+npm i ( je nutné být adresáři kiosek-skola)
 
 **Potřebné balíčky**
 

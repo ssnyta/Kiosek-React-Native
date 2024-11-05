@@ -1,16 +1,16 @@
 import './App.css'
-import { Router as BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MainPage } from './page/MainPage/MainPage.jsx';
 
 function App() {
 
   return (
     <>
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path='/negr' element ={<MainPage/>}></Route>
+        <Route path='/' element ={<MainPage/>}></Route>
       </Routes>
-    </Router>
+    </BrowserRouter>
     </>
   )
 }

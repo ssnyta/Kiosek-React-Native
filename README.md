@@ -10,5 +10,5 @@ npm i ( je nutné být adresáři kiosek-skola)
 React Router -  npm i react-router-dom
 Axios - npm i axios (kdybych pracoval s API)
 
-**Tailwind**
-npm install -D tailwindcss
+**Bootstrap**
+npm i bootstrap@5.3.3

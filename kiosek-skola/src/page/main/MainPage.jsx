@@ -9,7 +9,6 @@ export const MainPage = () => {
       <div className="container text-center">
         <div className="aktuality">
             <h1>Novinky na naší škole:</h1>
-            <h2>Další aktuality -{">"}</h2> {/**Link pro aktuality*/}
           <div className="row">
             <div className="col">
               <Card />

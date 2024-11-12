@@ -12,3 +12,6 @@ Axios - npm i axios (kdybych pracoval s API)
 
 **Bootstrap**
 npm i bootstrap@5.3.3
+
+**Zápisky**
+Hlavní stránka obsah ( aktuality školy, třidní schůzky, pololetní schůzky, zobrazení probíhajících hodin, kabinety učitelů, rozvrh tříd {user vyberé třídu})

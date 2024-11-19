@@ -1,0 +1,30 @@
+{
+    "ucitele": [
+      {
+        "jmeno": "Jan Novák",
+        "tridniTrida": "IT4",
+        "kabinet": "A203"
+      },
+      {
+        "jmeno": "Petra Dvořáková",
+        "tridniTrida": "ST3",
+        "kabinet": "B112"
+      },
+      {
+        "jmeno": "Marek Svoboda",
+        "tridniTrida": "ME2",
+        "kabinet": "C310"
+      },
+      {
+        "jmeno": "Klára Vrbová",
+        "tridniTrida": "EL1",
+        "kabinet": "A101"
+      },
+      {
+        "jmeno": "Pavel Černý",
+        "tridniTrida": "AU4",
+        "kabinet": "B204"
+      }
+    ]
+  }
+  

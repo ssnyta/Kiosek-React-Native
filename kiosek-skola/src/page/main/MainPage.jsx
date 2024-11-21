@@ -1,31 +1,16 @@
-import { Nav } from "../../components/nav/Nav";
+import React from "react";
 import { Card } from "../../components/card/Card";
+import subjects from "../../../hodiny.json"
+
 export const MainPage = () => {
   return (
-    <>
-      <div className="navigation">
-        <Nav />
+    <div className="main-page">
+      <h1>Probíhající hodiny</h1>
+      <div className="card-container">
+        {subjects.probihajiciHodiny.map((hour, index) => (
+          <Card key={index} hour={hour} />
+        ))}
       </div>
-      <div className="container text-center">
-        <div className="hodiny">
-          <h2> Probíhající hodiny</h2>
-        </div>
-        <div className="aktuality">
-            <h1>Novinky na naší škole:</h1>
-          <div className="row">
-            <div className="col">
-              <Card />
-            </div>
-            <div className="col">
-              <Card />
-            </div>
-            <div className="col">
-              <Card />
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </>
+    </div>
   );
 };

@@ -1,0 +1,30 @@
+{
+    "probihajiciHodiny": [
+      {
+        "trida": "IT4",
+        "nazev": "Programování",
+        "vyucujiciUcitel": "Jan Novák"
+      },
+      {
+        "trida": "ST3",
+        "nazev": "Konstrukční cvičení",
+        "vyucujiciUcitel": "Petra Dvořáková"
+      },
+      {
+        "trida": "ME2",
+        "nazev": "Technologie obrábění",
+        "vyucujiciUcitel": "Marek Svoboda"
+      },
+      {
+        "trida": "EL1",
+        "nazev": "Základy elektrotechniky",
+        "vyucujiciUcitel": "Klára Vrbová"
+      },
+      {
+        "trida": "AU4",
+        "nazev": "Diagnostika vozidel",
+        "vyucujiciUcitel": "Pavel Černý"
+      }
+    ]
+  }
+  

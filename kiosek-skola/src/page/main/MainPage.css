@@ -1,0 +1,15 @@
+.main-page {
+    text-align: center; /* Center the text */
+  }
+  
+  .card-container {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center; /* Center the cards */
+  }
+  
+  .card-container .card {
+    flex: 0 0 calc(33.333% - 20px); /* 3 cards per row with some spacing */
+    margin: 10px; /* Add margin for spacing between cards */
+    box-sizing: border-box; /* Include padding and border in width */
+  }

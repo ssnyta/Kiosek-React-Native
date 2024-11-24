@@ -3,10 +3,7 @@ export const Nav = () => {
     <>
       <ul className="nav justify-content-center">
   <li className="nav-item">
-    <a className="nav-link" href="#">Rozvrh</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link" >Kabinety</a>
+    <a className="nav-link" >Kabinety Učitelů</a>
   </li>
 </ul>
     </>

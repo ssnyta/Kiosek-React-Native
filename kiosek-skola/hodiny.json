@@ -1,30 +1,34 @@
 {
-    "probihajiciHodiny": [
-      {
-        "trida": "IT4",
-        "nazev": "Programování",
-        "vyucujiciUcitel": "Jan Novák"
-      },
-      {
-        "trida": "ST3",
-        "nazev": "Konstrukční cvičení",
-        "vyucujiciUcitel": "Petra Dvořáková"
-      },
-      {
-        "trida": "ME2",
-        "nazev": "Technologie obrábění",
-        "vyucujiciUcitel": "Marek Svoboda"
-      },
-      {
-        "trida": "EL1",
-        "nazev": "Základy elektrotechniky",
-        "vyucujiciUcitel": "Klára Vrbová"
-      },
-      {
-        "trida": "AU4",
-        "nazev": "Diagnostika vozidel",
-        "vyucujiciUcitel": "Pavel Černý"
-      }
-    ]
-  }
-  
+  "probihajiciHodiny": [
+    {
+      "trida": "IT4",
+      "nazev": "Programování",
+      "vyucujiciUcitel": "Jan Novák",
+      "mistnost": "A202"
+    },
+    {
+      "trida": "ST3",
+      "nazev": "Konstrukční cvičení",
+      "vyucujiciUcitel": "Petra Dvořáková",
+      "mistnost": "B105"
+    },
+    {
+      "trida": "ME2",
+      "nazev": "Technologie obrábění",
+      "vyucujiciUcitel": "Marek Svoboda",
+      "mistnost": "C303"
+    },
+    {
+      "trida": "EL1",
+      "nazev": "Základy elektrotechniky",
+      "vyucujiciUcitel": "Klára Vrbová",
+      "mistnost": "A101"
+    },
+    {
+      "trida": "AU4",
+      "nazev": "Diagnostika vozidel",
+      "vyucujiciUcitel": "Pavel Černý",
+      "mistnost": "B201"
+    }
+  ]
+}

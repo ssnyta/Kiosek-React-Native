@@ -1,3 +1,4 @@
+import "../card/Card.css"
 export const Card = ({ hour }) => {
   const { trida, nazev, vyucujiciUcitel, mistnost } = hour;
 

@@ -1,0 +1,67 @@
+.card {
+  text-align: center;
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto; /* Center the card horizontally */
+  box-sizing: border-box;
+  padding-top: 100px; /* Adjusts space above the card to avoid overlap with icons */
+}
+
+.teacher-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.teacher-detail .icons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.teacher-detail .icons img[alt="back_arrow"] {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.teacher-detail .icons img[alt="home"] {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.teacher-detail .icons img[alt="teacher_picture"] {
+  width: 150px;
+  height: 150px;
+  margin: 20px 0;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.info {
+  margin-top: 10vh; /* Adjusted to create enough space below the icons */
+  z-index: 0;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-top: 10px;
+}

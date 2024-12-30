@@ -1,0 +1,28 @@
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;  /* Reduce space between search bar and results */
+  height: auto;  /* Remove full height that causes excessive space */
+  padding: 20px 0;  /* Minimal padding for spacing */
+}
+  
+  .form-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .form-control {
+    width: 300px;  /* Adjust width of input box */
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

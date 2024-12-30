@@ -1,6 +1,5 @@
 import React from "react";
 import { Card } from "../../components/card/Card";
-import { SearchBar } from "../../components/searchBar/searchBar";
 import subjects from "../../../hodiny.json"
 import "../main/MainPage.css"
 import { Nav } from "../../components/nav/Nav";

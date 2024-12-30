@@ -1,19 +1,33 @@
-export const SearchBar = () => {
+import React, { useState } from "react";
+import "../searchBar/searchBar.css";
+export const SearchBar = ({ onSearch }) => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    onSearch(searchTerm);
+  };
+
   return (
     <>
-      <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
+      <div className= "searchbar">
+        <form className="form-inline" onSubmit={handleSearch}>
           <input
-            class="form-control mr-sm-2"
+            className="form-control mr-sm-2"
             type="search"
-            placeholder="Search"
+            placeholder="Koho pak hledáš ?"
             aria-label="Search"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
+          <button
+            className="btn btn-primary"
+            type="submit"
+          >
+            Hledat
           </button>
         </form>
-      </nav>
+      </div>
     </>
   );
 };

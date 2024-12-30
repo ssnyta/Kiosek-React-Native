@@ -1,30 +1,39 @@
 {
-    "ucitele": [
-      {
-        "jmeno": "Jan Novák",
-        "tridniTrida": "IT4",
-        "kabinet": "A203"
-      },
-      {
-        "jmeno": "Petra Dvořáková",
-        "tridniTrida": "ST3",
-        "kabinet": "B112"
-      },
-      {
-        "jmeno": "Marek Svoboda",
-        "tridniTrida": "ME2",
-        "kabinet": "C310"
-      },
-      {
-        "jmeno": "Klára Vrbová",
-        "tridniTrida": "EL1",
-        "kabinet": "A101"
-      },
-      {
-        "jmeno": "Pavel Černý",
-        "tridniTrida": "AU4",
-        "kabinet": "B204"
-      }
-    ]
-  }
-  
+  "ucitele": [
+    {
+      "jmeno": "Jan Novák",
+      "titul": "Ing.",
+      "tridniTrida": "IT4",
+      "kabinet": "A203",
+      "email": "jan.novak@vitkovickastredni.cz"
+    },
+    {
+      "jmeno": "Petra Dvořáková",
+      "titul": "Mgr.",
+      "tridniTrida": "ST3",
+      "kabinet": "B112",
+      "email": "petra.dvorakova@vitkovickastredni.cz"
+    },
+    {
+      "jmeno": "Marek Svoboda",
+      "titul": "Bc.",
+      "tridniTrida": "ME2",
+      "kabinet": "C310",
+      "email": "marek.svoboda@vitkovickastredni.cz"
+    },
+    {
+      "jmeno": "Klára Vrbová",
+      "titul": "PhDr.",
+      "tridniTrida": "EL1",
+      "kabinet": "A101",
+      "email": "klara.vrbova@vitkovickastredni.cz"
+    },
+    {
+      "jmeno": "Pavel Černý",
+      "titul": "Mgr.",
+      "tridniTrida": "AU4",
+      "kabinet": "B204",
+      "email": "pavel.cerny@vitkovickastredni.cz"
+    }
+  ]
+}

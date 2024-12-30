@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Align content to the top */
+    align-items: center;
+    height: 100vh;
+    padding-top: 100px;  /* Pushes everything slightly down */
+  }
+  
+  .teacher-list {
+    list-style: none;
+    margin: 10px 0 0 0;  /* Reduced top margin for less space */
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .teacher-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .teacher-item:hover {
+    background-color: #e0e0e0;
+  }
+  

@@ -5,35 +5,80 @@
       "titul": "Ing.",
       "tridniTrida": "IT4",
       "kabinet": "A203",
-      "email": "jan.novak@vitkovickastredni.cz"
+      "email": "jan.novak@vitkovickastredni.cz",
+      "role": "Učitel informačních technologií"
     },
     {
       "jmeno": "Petra Dvořáková",
       "titul": "Mgr.",
       "tridniTrida": "ST3",
       "kabinet": "B112",
-      "email": "petra.dvorakova@vitkovickastredni.cz"
+      "email": "petra.dvorakova@vitkovickastredni.cz",
+      "role": "Učitelka strojírenství"
     },
     {
       "jmeno": "Marek Svoboda",
       "titul": "Bc.",
       "tridniTrida": "ME2",
       "kabinet": "C310",
-      "email": "marek.svoboda@vitkovickastredni.cz"
+      "email": "marek.svoboda@vitkovickastredni.cz",
+      "role": "Učitel mechatroniky"
     },
     {
       "jmeno": "Klára Vrbová",
       "titul": "PhDr.",
       "tridniTrida": "EL1",
       "kabinet": "A101",
-      "email": "klara.vrbova@vitkovickastredni.cz"
+      "email": "klara.vrbova@vitkovickastredni.cz",
+      "role": "Učitelka elektrotechniky"
     },
     {
       "jmeno": "Pavel Černý",
       "titul": "Mgr.",
       "tridniTrida": "AU4",
       "kabinet": "B204",
-      "email": "pavel.cerny@vitkovickastredni.cz"
+      "email": "pavel.cerny@vitkovickastredni.cz",
+      "role": "Učitel automechaniky"
+    },
+    {
+      "jmeno": "Petr Kovář",
+      "titul": "Ing.",
+      "tridniTrida": null,
+      "kabinet": "A101",
+      "email": "petr.kovar@vitkovickastredni.cz",
+      "role": "Ředitel školy"
+    },
+    {
+      "jmeno": "Jana Malá",
+      "titul": "Mgr.",
+      "tridniTrida": null,
+      "kabinet": "A102",
+      "email": "jana.mala@vitkovickastredni.cz",
+      "role": "Vedoucí studijního oddělení"
+    },
+    {
+      "jmeno": "Tomáš Doležal",
+      "titul": "Bc.",
+      "tridniTrida": null,
+      "kabinet": "B201",
+      "email": "tomas.dolezal@vitkovickastredni.cz",
+      "role": "Ekonom školy"
+    },
+    {
+      "jmeno": "Eva Procházková",
+      "titul": null,
+      "tridniTrida": null,
+      "kabinet": "A100",
+      "email": "eva.prochazkova@vitkovickastredni.cz",
+      "role": "Sekretářka"
+    },
+    {
+      "jmeno": "Milan Král",
+      "titul": "PhDr.",
+      "tridniTrida": null,
+      "kabinet": "C301",
+      "email": "milan.kral@vitkovickastredni.cz",
+      "role": "Výchovný poradce"
     }
   ]
 }

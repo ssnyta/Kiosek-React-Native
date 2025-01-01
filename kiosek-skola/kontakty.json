@@ -1,0 +1,45 @@
+{
+    "kontakty": [
+      {
+        "oddeleni": "Ředitelství",
+        "jmeno": "Ing. Petr Kovář",
+        "pozice": "Ředitel školy",
+        "telefon": "+420 555 123 456",
+        "email": "petr.kovar@vitkovickastredni.cz",
+        "mistnost": "A101"
+      },
+      {
+        "oddeleni": "Studijní oddělení",
+        "jmeno": "Mgr. Jana Malá",
+        "pozice": "Vedoucí studijního oddělení",
+        "telefon": "+420 555 123 457",
+        "email": "jana.mala@vitkovickastredni.cz",
+        "mistnost": "A102"
+      },
+      {
+        "oddeleni": "Ekonomické oddělení",
+        "jmeno": "Bc. Tomáš Doležal",
+        "pozice": "Ekonom školy",
+        "telefon": "+420 555 123 458",
+        "email": "tomas.dolezal@vitkovickastredni.cz",
+        "mistnost": "B201"
+      },
+      {
+        "oddeleni": "Sekretariát",
+        "jmeno": "Eva Procházková",
+        "pozice": "Sekretářka",
+        "telefon": "+420 555 123 459",
+        "email": "eva.prochazkova@vitkovickastredni.cz",
+        "mistnost": "A100"
+      },
+      {
+        "oddeleni": "Výchovné poradenství",
+        "jmeno": "PhDr. Milan Král",
+        "pozice": "Výchovný poradce",
+        "telefon": "+420 555 123 460",
+        "email": "milan.kral@vitkovickastredni.cz",
+        "mistnost": "C301"
+      }
+    ]
+  }
+  

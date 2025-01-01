@@ -1,0 +1,35 @@
+{
+    "aktuality": [
+      {
+        "nadpis": "Den otevřených dveří",
+        "datum": "2024-01-15",
+        "autor": "Vedení školy",
+        "popis": "Zveme všechny zájemce o studium na Den otevřených dveří. Přijďte si prohlédnout naše učebny a vybavení."
+      },
+      {
+        "nadpis": "Úspěch studentů na soutěži",
+        "datum": "2024-02-05",
+        "autor": "Mgr. Petra Dvořáková",
+        "popis": "Naši studenti oboru Strojírenství získali první místo v krajské soutěži technických dovedností. Gratulujeme!"
+      },
+      {
+        "nadpis": "Nové vybavení do učeben IT",
+        "datum": "2024-03-10",
+        "autor": "Ing. Jan Novák",
+        "popis": "Do učeben informačních technologií byly instalovány nové počítače a interaktivní tabule."
+      },
+      {
+        "nadpis": "Plánovaná rekonstrukce tělocvičny",
+        "datum": "2024-04-01",
+        "autor": "Vedení školy",
+        "popis": "Od května proběhne rekonstrukce tělocvičny. Očekávané dokončení je v srpnu 2024."
+      },
+      {
+        "nadpis": "Exkurze do automobilového závodu",
+        "datum": "2024-05-20",
+        "autor": "Mgr. Pavel Černý",
+        "popis": "Studenti 3. a 4. ročníku oboru Automechanik se zúčastní exkurze do závodu Škoda Auto v Mladé Boleslavi."
+      }
+    ]
+  }
+  

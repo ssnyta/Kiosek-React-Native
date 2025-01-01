@@ -10,7 +10,7 @@ export const MainPage = () => {
       <h1>Probíhající hodiny: </h1>
       <div className="card-container">
         {subjects.probihajiciHodiny.map((hour, index) => (
-          <Card key={index} hour={hour} />
+          <Card key={index} hour={hour} center/>
         ))}
       </div>
       

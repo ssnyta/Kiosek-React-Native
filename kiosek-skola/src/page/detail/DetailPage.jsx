@@ -18,19 +18,27 @@ export const DetailTeacher = () => {
         <div className="card">
           <div className="card-body">
             <div className="icons">
-              <a href="/teacher"><img src="../../src/assets/icons/back.png" alt="back_arrow"/></a> 
+              <a href="/teacher">
+                <img src="../../src/assets/icons/back.png" alt="back_arrow" />
+              </a>
               <img
                 src="../../src/assets/userpicture.png"
                 alt="teacher_picture"
               />
-              <a href="/"><img src="../../src/assets/icons/home.png" alt="home" /></a>
-              
+              <a href="/">
+                <img src="../../src/assets/icons/home.png" alt="home" />
+              </a>
             </div>
             <div className="info">
               <h1 className="card-title">
                 {teacher.titul} {teacher.jmeno}
               </h1>
-              <p className="card-text">Třídní třída: {teacher.tridniTrida}</p>
+              {teacher.role && (
+                <p className="card-text">Role: {teacher.role}</p>
+              )}
+              {teacher.tridniTrida && teacher.tridniTrida !== "N/A" && (
+  <p className="card-text">Třídní třída: {teacher.tridniTrida}</p>
+)}
               <p className="card-text">Kabinet: {teacher.kabinet}</p>
               <p className="card-text">Email: {teacher.email}</p>
             </div>

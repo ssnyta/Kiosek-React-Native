@@ -4,7 +4,7 @@ import { MainPage } from "./page/main/MainPage";
 import { TeacherPage } from "./page/teacher/TeacherPage";
 import { DetailTeacher } from "./page/detail/DetailPage";
 import { AktualitaPage } from "./page/aktualita/Aktualita";
-
+import { Kontakty } from "./page/kontakty/Kontakty";
 function App() {
   return (
     <>
@@ -14,6 +14,7 @@ function App() {
           <Route path="/teacher" element={<TeacherPage />} />
           <Route path="/teacher/detail" element={<DetailTeacher />} />
           <Route path="/aktuality" element={<AktualitaPage/>}/>
+          <Route path="/kontakty" element = {<Kontakty/>}/>
         </Routes>
       </BrowserRouter>
     </>

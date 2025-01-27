@@ -15,8 +15,8 @@ export const DetailTeacher = () => {
     <>
       <Nav />
       <div className="teacher-detail">
-        <div className="card">
-          <div className="card-body">
+        <div className="card card-person">
+          <div className="card-body card-body-person">
             <div className="icons">
               <a href="/teacher">
                 <img src="../../src/assets/icons/back.png" alt="back_arrow" />
@@ -30,17 +30,17 @@ export const DetailTeacher = () => {
               </a>
             </div>
             <div className="info">
-              <h1 className="card-title">
+              <h1 className="card-title card-title-person">
                 {teacher.titul} {teacher.jmeno}
               </h1>
               {teacher.role && (
-                <p className="card-text">Role: {teacher.role}</p>
+                <p className="card-text card-text-person">Kdo jsem : {teacher.role}</p>
               )}
               {teacher.tridniTrida && teacher.tridniTrida !== "N/A" && (
-  <p className="card-text">Třídní třída: {teacher.tridniTrida}</p>
-)}
-              <p className="card-text">Kabinet: {teacher.kabinet}</p>
-              <p className="card-text">Email: {teacher.email}</p>
+                <p className="card-text card-text-person">Třídní třída: {teacher.tridniTrida}</p>
+              )}
+              <p className="card-text card-text-person">Kabinet: {teacher.kabinet}</p>
+              <p className="card-text card-text-person">Email: {teacher.email}</p>
             </div>
           </div>
         </div>

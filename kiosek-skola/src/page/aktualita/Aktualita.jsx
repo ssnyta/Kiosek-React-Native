@@ -1,6 +1,7 @@
+// AktualitaPage.jsx
 import { Nav } from "../../components/nav/Nav";
 import subjects from "../../../aktualita.json";
-import "../../page/aktualita/Aktualita";
+import "../aktualita/aktualita.css";
 
 export const AktualitaPage = () => {
   const sortedSubjects = subjects.aktuality.sort((a, b) => new Date(b.datum) - new Date(a.datum));
@@ -10,20 +11,20 @@ export const AktualitaPage = () => {
       <Nav />
       <div className="container mt-4">
         {sortedSubjects.map((subject, index) => {
-          const collapseId = `collapse-${index}`;
+          const collapseId = `collapse-aktualita-${index}`;
           return (
             <div key={index} className="mb-3">
               <div className="d-flex justify-content-between align-items-center p-3 border rounded">
                 <h5 className="m-0">
-                  <button 
-                    className="btn btn-link text-decoration-none d-flex align-items-center" 
-                    type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target={`#${collapseId}`} 
-                    aria-expanded="false" 
+                  <button
+                    className="btn btn-link text-decoration-none d-flex align-items-center"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target={`#${collapseId}`}
+                    aria-expanded="false"
                     aria-controls={collapseId}
                   >
-                    {subject.nadpis} 
+                    {subject.nadpis}
                     <span className="badge bg-primary ms-2">{subject.datum}</span>
                   </button>
                 </h5>

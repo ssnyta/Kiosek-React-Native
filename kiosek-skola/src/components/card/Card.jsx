@@ -30,7 +30,7 @@ export const Card = ({ hours }) => {
               key={index}
               className={`carousel-item ${index === 0 ? "active" : ""}`}
             >
-              <div className="card card-carousel">
+              <div className="card card-carousel" style={{ maxWidth: "600px", margin: "0 auto" }}>
                 <div className="card-body">
                   <h5 className="card-title">{nazev}</h5>
                   <h6 className="card-subtitle mb-2 text-body-secondary">
@@ -49,23 +49,23 @@ export const Card = ({ hours }) => {
         })}
       </div>
       <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
+  className="carousel-control-prev"
+  type="button"
+  data-bs-target="#carouselExampleCaptions"
+  data-bs-slide="prev"
+>
+  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span className="visually-hidden">Previous</span>
+</button>
+<button
+  className="carousel-control-next"
+  type="button"
+  data-bs-target="#carouselExampleCaptions"
+  data-bs-slide="next"
+>
+  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+  <span className="visually-hidden">Next</span>
+</button>
     </div>
   );
 };

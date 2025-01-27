@@ -3,5 +3,14 @@
 }
 
 .btn{
-    color: white;
+    color: black;
 }
+
+.card-title button {
+    font-size: 1.2rem;
+  }
+  
+  .card-body {
+    font-size: 1.1rem;
+  }
+  

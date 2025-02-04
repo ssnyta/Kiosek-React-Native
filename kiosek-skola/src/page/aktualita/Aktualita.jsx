@@ -1,4 +1,3 @@
-// AktualitaPage.jsx
 import { Nav } from "../../components/nav/Nav";
 import subjects from "../../../aktualita.json";
 import "../aktualita/aktualita.css";
@@ -13,11 +12,11 @@ export const AktualitaPage = () => {
         {sortedSubjects.map((subject, index) => {
           const collapseId = `collapse-aktualita-${index}`;
           return (
-            <div key={index} className="mb-3">
-              <div className="d-flex justify-content-between align-items-center p-3 border rounded">
-                <h5 className="m-0">
+            <div key={index} className="card card-news mb-3 p-3">
+              <div className="card-header d-flex justify-content-between align-items-center">
+                <h5 className="card-title m-0">
                   <button
-                    className="btn btn-link text-decoration-none d-flex align-items-center"
+                    className="btn btn-link d-flex align-items-center"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target={`#${collapseId}`}
@@ -25,12 +24,12 @@ export const AktualitaPage = () => {
                     aria-controls={collapseId}
                   >
                     {subject.nadpis}
-                    <span className="badge bg-primary ms-2">{subject.datum}</span>
+                    <span className="badge ms-2">{subject.datum}</span>
                   </button>
                 </h5>
               </div>
               <div id={collapseId} className="collapse">
-                <div className="p-3 border rounded">
+                <div className="card-body">
                   <p><strong>Autor:</strong> {subject.autor}</p>
                   <p>{subject.popis}</p>
                 </div>

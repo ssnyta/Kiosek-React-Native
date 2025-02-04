@@ -9,7 +9,7 @@
   
   /* Karta, která obsahuje detaily učitele */
   .card.card-person {
-    background-color: #f4f4f9; /* Světlejší pozadí pro personální karty */
+    background-color: #ffffff; /* Světlejší pozadí pro personální karty */
     border-radius: 12px; /* Zaoblené rohy pro elegantní vzhled */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Jemný stín kolem karty */
     overflow: hidden; /* Ujistíme se, že obsah nebude přesahovat okraje karty */
@@ -22,7 +22,7 @@
   .card-body.card-body-person {
     padding: 20px; /* Prostor uvnitř karty */
     font-family: Arial, sans-serif; /* Příjemný font pro text */
-    background-color: #ffffff; /* Bílé pozadí pro obsah */
+    background-color: #6F94E0; /* Bílé pozadí pro obsah */
     display: flex; /* Flexbox pro vycentrování obsahu uvnitř */
     flex-direction: column; /* Svislé uspořádání textu */
     justify-content: center; /* Vertikální vycentrování textu */
@@ -34,7 +34,7 @@
   /* Styl pro nadpis karty */
   .card-title.card-title-person {
     font-size: 1.8rem;
-    color: #333333; /* Tmavší barva pro lepší čitelnost */
+    color: #2c2c2c; /* Tmavší barva pro lepší čitelnost */
     margin-bottom: 15px;
     font-weight: bold;
   }
@@ -42,7 +42,7 @@
   /* Styl pro text v kartě */
   .card-text.card-text-person {
     font-size: 1rem;
-    color: #555555; /* Šedější text pro lepší čitelnost */
+    color: #2c2c2c; /* Šedější text pro lepší čitelnost */
     margin-bottom: 10px;
   }
   

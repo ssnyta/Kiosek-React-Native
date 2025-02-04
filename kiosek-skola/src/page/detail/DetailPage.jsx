@@ -34,13 +34,13 @@ export const DetailTeacher = () => {
                 {teacher.titul} {teacher.jmeno}
               </h1>
               {teacher.role && (
-                <p className="card-text card-text-person">Kdo jsem : {teacher.role}</p>
+                <p className="card-text card-text-person">🧑Kdo jsem : {teacher.role}</p>
               )}
               {teacher.tridniTrida && teacher.tridniTrida !== "N/A" && (
-                <p className="card-text card-text-person">Třídní třída: {teacher.tridniTrida}</p>
+                <p className="card-text card-text-person">🏫Třídní třída: {teacher.tridniTrida}</p>
               )}
-              <p className="card-text card-text-person">Kabinet: {teacher.kabinet}</p>
-              <p className="card-text card-text-person">Email: {teacher.email}</p>
+              <p className="card-text card-text-person">🏢 Kabinet: {teacher.kabinet}</p>
+              <p className="card-text card-text-person">✉️ Email: {teacher.email}</p>
             </div>
           </div>
         </div>

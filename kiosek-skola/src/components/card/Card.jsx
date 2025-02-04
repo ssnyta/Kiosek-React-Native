@@ -3,70 +3,48 @@ import "../card/Card.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Card = ({ hours }) => {
-  const [activeIndex, setActiveIndex] = useState(0); // Aktivní slide
-  const [isUserInteracting, setIsUserInteracting] = useState(false); // Flag pro interakci uživatele
-  const autoSlideInterval = useRef(null); // Ref pro interval
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isUserInteracting, setIsUserInteracting] = useState(false);
+  const autoSlideInterval = useRef(null);
 
-  // Funkce pro přepnutí na další slide
   const nextSlide = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % hours.length);
   };
 
-  // Funkce pro přepnutí na předchozí slide
   const prevSlide = () => {
     setActiveIndex((prevIndex) => (prevIndex === 0 ? hours.length - 1 : prevIndex - 1));
   };
 
-  // Funkce pro restartování intervalu
   const restartAutoSlide = () => {
-    if (autoSlideInterval.current) {
-      clearInterval(autoSlideInterval.current); // Vyčistit předchozí interval
-    }
-    // Nastavit nový interval pro automatické přepínání
+    if (autoSlideInterval.current) clearInterval(autoSlideInterval.current);
     autoSlideInterval.current = setInterval(() => {
       nextSlide();
-    }, 5000); // 5 sekund
+    }, 5000);
   };
 
-  // Funkce pro zastavení automatického přepínání při manuálním přepnutí
   const stopAutoSlide = () => {
-    if (autoSlideInterval.current) {
-      clearInterval(autoSlideInterval.current); // Zastavit interval
-    }
-    setIsUserInteracting(true); // Nastavit flag, že uživatel interaguje
+    if (autoSlideInterval.current) clearInterval(autoSlideInterval.current);
+    setIsUserInteracting(true);
   };
 
-  // Funkce pro ruční přepnutí na konkrétní slide (při kliknutí na indikátor)
   const handleIndicatorClick = (index) => {
     setActiveIndex(index);
-    stopAutoSlide(); // Zastavit interval při manuálním přepnutí
+    stopAutoSlide();
   };
 
-  // Efekt pro správu automatického přepínání karet
   useEffect(() => {
-    if (isUserInteracting) {
-      return; // Pokud uživatel interaguje, automatické přepínání se nezapne
-    }
-
-    // Restartujeme interval, pokud není žádná interakce uživatele
+    if (isUserInteracting) return;
     restartAutoSlide();
-
-    // Vyčištění intervalů při unmountu nebo změně stavu
     return () => {
-      if (autoSlideInterval.current) {
-        clearInterval(autoSlideInterval.current);
-      }
+      if (autoSlideInterval.current) clearInterval(autoSlideInterval.current);
     };
-  }, [activeIndex, isUserInteracting]); // Závislost na změně activeIndex a isUserInteracting
+  }, [activeIndex, isUserInteracting]);
 
-  // Obnovení interakce po určité době (5 sekund)
   useEffect(() => {
     if (!isUserInteracting) return;
-
     const timer = setTimeout(() => {
-      setIsUserInteracting(false); // Po 5 sekundách obnovíme interakci
+      setIsUserInteracting(false);
     }, 5000);
-
     return () => clearTimeout(timer);
   }, [isUserInteracting]);
 
@@ -82,7 +60,7 @@ export const Card = ({ hours }) => {
           <button
             key={index}
             type="button"
-            onClick={() => handleIndicatorClick(index)} // Ruční přepnutí při kliknutí na indikátor
+            onClick={() => handleIndicatorClick(index)}
             className={index === activeIndex ? "active" : ""}
             aria-current={index === activeIndex ? "true" : undefined}
             aria-label={`Slide ${index + 1}`}
@@ -94,16 +72,13 @@ export const Card = ({ hours }) => {
         {hours.map((hour, index) => {
           const { trida, nazev, vyucujiciUcitel, mistnost } = hour;
           return (
-            <div
-              key={index}
-              className={`carousel-item ${index === activeIndex ? "active" : ""}`}
-            >
-              <div className="card card-carousel" style={{ maxWidth: "600px", margin: "0 auto" }}>
+            <div key={index} className={`carousel-item ${index === activeIndex ? "active" : ""}`}>
+              <div className="card card-carousel">
                 <div className="card-body">
                   <h5 className="card-title">{nazev}</h5>
-                  <h6 className="card-subtitle mb-2 text-body-secondary">Třída: {trida}</h6>
-                  <h6 className="card-subtitle mb-2 text-body-secondary">Učitel: {vyucujiciUcitel}</h6>
-                  <h6 className="card-subtitle mb-2 text-body-secondary">Místnost: {mistnost}</h6>
+                  <h6 className="card-subtitle">Třída: {trida}</h6>
+                  <h6 className="card-subtitle">Učitel: {vyucujiciUcitel}</h6>
+                  <h6 className="card-subtitle">Místnost: {mistnost}</h6>
                 </div>
               </div>
             </div>
@@ -111,21 +86,11 @@ export const Card = ({ hours }) => {
         })}
       </div>
 
-      <button
-        className="carousel-control-prev"
-        type="button"
-        onClick={() => { prevSlide(); stopAutoSlide(); }} // Zastavit interval při manuálním přepnutí na předchozí slide
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
+      <button className="carousel-control-prev" type="button" onClick={() => { prevSlide(); stopAutoSlide(); }}>
+        <span className="carousel-control-prev-icon"></span>
       </button>
-      <button
-        className="carousel-control-next"
-        type="button"
-        onClick={() => { nextSlide(); stopAutoSlide(); }} // Zastavit interval při manuálním přepnutí na další slide
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
+      <button className="carousel-control-next" type="button" onClick={() => { nextSlide(); stopAutoSlide(); }}>
+        <span className="carousel-control-next-icon"></span>
       </button>
     </div>
   );

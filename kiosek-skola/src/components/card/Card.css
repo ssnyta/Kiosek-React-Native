@@ -1,95 +1,146 @@
-/* Obecný styl pro karusel */
-.carousel-inner {
-    position: relative;
-  }
-  
-  /* Styl pro každý slide v karuselu */
-  .carousel-item {
-    opacity: 0; /* Začíná neviditelný */
-    transform: translateX(100%); /* Posunout mimo obrazovku */
-    transition: transform 0.5s ease, opacity 0.5s ease; /* Plynulý přechod mezi slidery */
-  }
-  
-  /* Aktivní slide */
-  .carousel-item.active {
-    opacity: 1; /* Nastaví viditelnost */
-    transform: translateX(0); /* Posune ho zpět na správnou pozici */
-  }
-  
-  /* Nastavení pro slidy, které jsou na vedlejších pozicích (next, prev) */
-  .carousel-item-next,
-  .carousel-item-prev {
-    opacity: 1;
-    transform: translateX(0); /* Slidy, které jsou blízko, se plynule posunou */
-  }
-  
-  /* Slidy, které jsou mimo obrazovku */
-  .carousel-item-next.carousel-item-left,
-  .carousel-item-prev.carousel-item-right {
-    transform: translateX(100%); /* Posunout mimo obrazovku */
-    opacity: 0;
-  }
-  
-  /* Zajistí, že šipky (prev/next) budou na správném místě */
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Poloprůhledné pozadí pro lepší viditelnost */
-    border-radius: 50%; /* Kulatý tvar */
-    width: 40px;
-    height: 40px;
-  }
-  
-  /* Zvýraznění karuselových karet */
+/* ====== KARUSEL ====== */
+.carousel {
+  padding: 20px;
+  position: relative;
+  overflow: visible; /* Zajistí, že nic nebude oříznuto */
+}
+
+/* ====== SLIDES ====== */
+.carousel-item {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ====== KARTY ====== */
+.card-carousel {
+  background: #0D7081;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-carousel:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* ====== TEXTY ====== */
+h5.card-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+
+.card-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.9;
+  color: white;
+}
+
+/* ====== OVLÁDACÍ ŠIPKY (prev/next) ====== */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  z-index: 10; /* Šipky budou nad obsahem */
+  overflow: visible;
+}
+
+.carousel-control-prev {
+  left: -70px; /* Šipky posunuty více od obsahu */
+}
+
+.carousel-control-next {
+  right: -70px; /* Šipky posunuty více od obsahu */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+/* ====== TEČKY (indikátory slidu) ====== */
+/* Indikátory přesunuty mimo obsah karty, tedy pod ni, a vystředěné horizontálně */
+.carousel-indicators {
+  position: absolute;
+  bottom: -30px; /* Umístí indikátory pod kartou */
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-indicators button {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid black; /* Přidán černý okraj pro lepší viditelnost */
+  margin: 0 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #0D7081;
+  transform: scale(1.3);
+  border-color: transparent; /* U aktivního odstraníme okraj, pokud je to preferováno */
+}
+
+/* ====== RESPONSIVITA ====== */
+@media (max-width: 768px) {
   .card-carousel {
-    background-color: #0D7081;
-    color: white;
-    transform: scale(1.2); /* Zvětší kartu */
-    transition: transform 0.3s ease; /* Hladká animace při změně */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Přidá efekt stínu */
-    border-radius: 12px; /* Zaoblené rohy */
+      font-size: 0.9rem;
   }
   
-  .card-carousel:hover {
-    transform: scale(1.3); /* Zvýraznění při najetí myší */
-  }
-  
-  /* Hlavní styly pro text v kartách */
   h5.card-title {
-    font-size: 1.5rem; /* Zvětšení nadpisu */
+      font-size: 1.3rem;
   }
   
-  .card-subtitle {
-    font-size: 1rem; /* Zvětšení textu podnadpisů */
+  .carousel-indicators {
+      bottom: -25px; /* Lehce upraveno pro menší displeje */
   }
   
-  /* Nastavení pro ovládání karuselu (šipky) */
-  .carousel-control-prev,
-  .carousel-control-next {
-    z-index: 11; /* Zajistí, že jsou šipky nad ostatními prvky */
-    top: 50%; /* Vycentruje šipky vertikálně */
-    transform: translateY(-50%);
-  }
-  
-  /* Styl pro jednotlivé slide indikátory (tečky pod karuselem) */
   .carousel-indicators button {
-    background-color: rgba(255, 255, 255, 0.7); /* Barva pro neaktivní indikátory */
+      width: 12px;
+      height: 12px;
+      margin: 0 3px;
   }
   
-  .carousel-indicators .active {
-    background-color: #0D7081; /* Barva pro aktivní indikátor */
+  .carousel-control-prev {
+      left: -50px;
   }
   
-  /* Nastavení pro samotné karuselové slidy */
-  .carousel {
-    padding: 20px; /* Přidá prostor kolem celého karuselu */
-    position: relative;
+  .carousel-control-next {
+      right: -50px;
   }
-  
-  /* Nastavení pro jednotlivé položky v karuselu (pro správné zarovnání obsahu) */
-  .carousel .carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px; /* Nastaví minimální výšku karuselu */
-  }
-  
+}

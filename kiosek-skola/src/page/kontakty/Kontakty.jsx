@@ -1,5 +1,6 @@
 import { Nav } from "../../components/nav/Nav";
 import contacts from "../../../contact.json";
+import "../kontakty/kontakty.css"; 
 
 export const Kontakty = () => {
   const sortedContacts = contacts.kontakty.sort((a, b) => a.oddeleni.localeCompare(b.oddeleni));
@@ -11,11 +12,11 @@ export const Kontakty = () => {
         {sortedContacts.map((contact, index) => {
           const collapseId = `collapse-kontakt-${index}`;
           return (
-            <div key={index} className="mb-3">
-              <div className="d-flex justify-content-between align-items-center p-3 border rounded">
-                <h5 className="m-0">
+            <div key={index} className="card contact-card mb-3 p-3">
+              <div className="card-header d-flex justify-content-between align-items-center">
+                <h5 className="card-title m-0">
                   <button
-                    className="btn btn-link text-decoration-none d-flex align-items-center"
+                    className="btn btn-link d-flex align-items-center"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target={`#${collapseId}`}
@@ -23,16 +24,16 @@ export const Kontakty = () => {
                     aria-controls={collapseId}
                   >
                     {contact.jmeno} 
-                    <span className="badge bg-secondary ms-2">{contact.oddeleni}</span>
+                    <span className="badge ms-2">{contact.oddeleni}</span>
                   </button>
                 </h5>
               </div>
               <div id={collapseId} className="collapse">
-                <div className="p-3 border rounded">
+                <div className="card-body">
                   <p><strong>Pozice:</strong> {contact.pozice}</p>
-                  <p><strong>Telefon:</strong> {contact.telefon}</p>
-                  <p><strong>Email:</strong> <a href={`mailto:${contact.email}`}>{contact.email}</a></p>
-                  <p><strong>Místnost:</strong> {contact.mistnost}</p>
+                  <p><strong>📞 Telefon:</strong> {contact.telefon}</p>
+                  <p><strong>✉️ Email:</strong> <a href={`mailto:${contact.email}`}>{contact.email}</a></p>
+                  <p><strong>🏢 Místnost:</strong> {contact.mistnost}</p>
                 </div>
               </div>
             </div>

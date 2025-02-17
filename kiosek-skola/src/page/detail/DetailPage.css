@@ -29,6 +29,7 @@
     align-items: center; /* Horizontální vycentrování textu */
     height: 100%; /* Zajistíme, aby tělo karty zabíralo celý dostupný prostor */
     text-align: center; /* Vycentrování textu uvnitř */
+    font-weight: bold;
   }
   
   /* Styl pro nadpis karty */

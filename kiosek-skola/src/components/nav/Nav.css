@@ -1,14 +1,13 @@
 .navbar {
-    background-color: #4CAEBE !important;
-    
-  }
-  
-  .navbar-brand,
-  .nav-link {
-    color: white !important;
-  }
-  
-  .nav-link:hover {
-    text-decoration: underline;
-  }
-  
+  background-color: #4CAEBE !important;
+  font-weight: bold;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}

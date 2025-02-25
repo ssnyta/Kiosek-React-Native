@@ -38,3 +38,11 @@
 .btn-link:hover {
   text-decoration: underline;
 }
+.card-news {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-news.expanded {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}

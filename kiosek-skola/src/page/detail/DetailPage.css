@@ -1,11 +1,13 @@
 /* Rodičovský element pro centrální umístění */
 .teacher-detail {
-    display: flex; /* Použijeme Flexbox pro snadné vycentrování */
-    justify-content: center; /* Vycentruje obsah horizontálně */
-    align-items: center; /* Vycentruje obsah vertikálně */
-    min-height: 100vh; /* Zajistí, že bude minimální výška rodiče 100% výšky okna */
-    padding: 20px; /* Přidáme trochu paddingu, aby se obsah nelepíl na okraje */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Zarovná obsah nahoře */
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 80px; /* Nastavte podle výšky vašeho navbaru */
+}
+
   
   /* Karta, která obsahuje detaily učitele */
   .card.card-person {
